@@ -5,7 +5,7 @@ var delscale = d3.scaleLinear()
   .domain([0, 1990])
   .range(["white", "#002E66"]);  
 
-  var category = ["Biden", "Bloomberg", "Booker", "Buttigieg", "Klobuchar", "Sanders", "Steyer", "Warren", "Yang"]
+  var category = ["National", "Labour", "Greens", "NZ First", "ACT", "Maori", "TOP", "New Conservative"]
   // since Category B and E are really close to each other, assign them diverging colors
   var color = d3.scaleOrdinal()
     .domain(category)
