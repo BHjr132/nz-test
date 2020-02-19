@@ -3,7 +3,7 @@ var winscale = d3.scaleLinear()
   .range(["white", "#0091FF", "#002E66"]);
 var delscale = d3.scaleLinear()
   .domain([0, 120])
-  .range(["white", "#002E66"]);  
+  .range(["white", "#0091FF"]);  
 
   var category = ["National", "Labour", "Greens", "NZ First", "ACT", "Maori", "TOP"]
   // since Category B and E are really close to each other, assign them diverging colors
