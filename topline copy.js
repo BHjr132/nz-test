@@ -5,11 +5,11 @@ var delscale = d3.scaleLinear()
   .domain([0, 1990])
   .range(["white", "#002E66"]);  
 
-  var category = ["National", "Labour", "Greens", "NZ First", "ACT", "Maori", "TOP", "New Conservative"]
+  var category = ["National", "Labour", "Greens", "NZ First", "ACT", "Maori", "TOP"]
   // since Category B and E are really close to each other, assign them diverging colors
   var color = d3.scaleOrdinal()
     .domain(category)
-    .range(["#00C181", "#FF6060", "#a4b1b5", "#FFC000", "#FF8D32", "#0091FF", "#FF2EF0", "#CD64FF", "#0070C0"])
+    .range(["#00C181", "#FF6060", "#a4b1b5", "#FFC000", "#FF8D32", "#0091FF", "#FF2EF0"])
   
 
 d3.csv("candsoverview.csv", function (error, data) {
