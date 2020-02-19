@@ -41,31 +41,6 @@ svg.append("rect")
     .attr("class", "repeat")
     .attr("transform", function (d, i) { return "translate(" + i * 100 + ",0)" })
 
-    repeat.append("a").attr("xlink:href",d=>d.candidate).append("image")
-    .attr("xlink:href",  d=>d.candidate+".jpg")
-    .attr("x", 120)
-    .attr("y", -180)
-    .attr("height", 100)
-    .attr("width", 60)
-    .attr("anchor","middle").on('mouseover', function(d) {
-                                  
-      d3.select(this)
-      .attr("x", 100)
-      .attr("width",100)
-      
-
-        
-      })
-      .on('mouseout', 
-      function(d) {
-      
-        d3.select(this)
-        .attr("x", 120)
-        .attr("width",60)
-        
-
-      });;
-
     repeat.append("a")
     .attr("xlink:href",d=>d.candidate)
     .append("text")
